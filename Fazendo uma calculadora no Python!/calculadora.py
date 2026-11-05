@@ -1,5 +1,7 @@
 import cmath
 print("Sejam bem-vindos(a) à calculadora no Python!")
+print("Criador: Nicolás")
+print("Colaboradores: ")
 print("Operações: \n1. Adição \n2. Subtração \n3. Multiplicação \n4. Divisão \n5. Potenciação \n6. Fatorial \n7. Radiciação \n8. Logaritmo")
 opr = input("Selecione o número da operação que você deseja: ")
 if opr == "1":
