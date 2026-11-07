@@ -1,4 +1,5 @@
 import cmath
+import math
 print("Sejam bem-vindos(a) à calculadora no Python!")
 print("Criador: Nicolás")
 print("Colaboradores: ")
@@ -123,7 +124,10 @@ elif opr == "6":
             print(f"Número do fatorial: {n_fatorial}")
             break
 
-    r_fatorial = cmath.factorial(n_fatorial)
+    r_fatorial = math.factorial(n_fatorial)
+    if n_fatorial < 0:
+        gamma = math.gamma(n_fatorial +1)
+        r_fatorial = gamma
     print(f"{n_fatorial}! é aproximadamente {r_fatorial}")
     print("Resultado calculado com sucesso!")
 elif opr == "7":
